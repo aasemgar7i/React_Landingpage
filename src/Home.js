@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import logo from './logo.png'; // Adjust the path to your logo image
+import Counter from './count';
 
 const Home = () => {
   const [fullName, setFullName] = useState('');
@@ -23,6 +24,7 @@ const Home = () => {
 
   const handleLogIn = () => {
     navigate('/underconstruction');
+
   };
 
   return (
@@ -63,6 +65,7 @@ const Home = () => {
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
       </div>
+      <Counter />
     </div>
   );
 };
