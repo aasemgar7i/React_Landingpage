@@ -9,10 +9,14 @@ const Counter = () => {
     const resetCount = () => {
         setCount(0);
     };
+    const mincCount = () => {
+        setCount(count - 1)
+    };
     return (
         <div style={{ textAlign: 'center', marginTop: '50px' }}>
           <h1>Counter: {count}</h1>
           <button onClick={incrementCount}>Increment</button>
+          <button onClick={mincCount}>Minc</button>
           <button onClick={resetCount}>Reset</button>
         </div>
       );      
